@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Birthday !</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- SCRIPTS -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></!-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/anniversaire.js"></script>
+    <style>
+        body {
+            max-height: 100vh !important;
+            max-width: 100vw !important;
+        }
+
+        .hero {
+            height: 25vh !important;
+        }
+
+        .section {
+            height: 75vh !important;
+        }
+
+        img {
+            max-height: 40px !important;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    <span class="emoji">🎂</span> Joyeux anniversaire <span class="emoji">🎂</span>
+                    <!-- 🎂 🎁 🥳 🎊 🍰 🍾 🥂 🍻 -->
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="heading has-text-centered">
+                <img id="emoji"
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/209/clinking-glasses_1f942.png" />
+                <h2 class="subtitle"><a class="button is-link">🎁 Happy Birthday ! 🎁</a></h2>
+                <h2 class="subtitle is-hidden"><a class="button is-info">🍾 ¡ Feliz cumpleaños ! 🍾</a></h2>
+                <h2 class="subtitle is-hidden sound"><a class="button is-success">🎊 お誕生日おめでとう ! 🎊</a></h2>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /* INITIALISATION JQUERY */
+        $(function () {
+            // console.log("jQuery chargé !");
+
+            $('.subtitle').click(function () {
+                // Fait apparaitre le paragraphe suivant au clic du "bouton"
+                $(this).next().removeClass("is-hidden");
+                // Change le background-color au clic
+                $('body').addClass("has-background-warning");
+            });
+
+            $('.is-hidden').click(function () {
+                // Change le background-color au clic
+                $('body').addClass("has-background-grey-light");
+            });
+
+            // Ajout fichier audio
+            const sound = new Audio("http://soundbible.com/mp3/party_horn-Mike_Koenig-76599891.mp3");
+            // Play fichier audio au clic du dernier bouton
+            $('.sound').click(e => sound.play());
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+    <style>
+        #salon {
+            margin-bottom: 15px;
+        }
+
+        select {
+            font-size: 0.8em;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 5px !important;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        input {
+            font-size: 0.8em;
+        }
+
+        .you,
+        #name {
+            color: #3273dc;
+            text-align: end;
+        }
+
+        .timestamp {
+            font-size: 0.5em;
+            color: black;
+        }
+
+        .fakebouton {
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .modif {
+            color: #3273dc;
+        }
+
+        .close {
+            color: #ff3860;
+        }
+
+        #boutons {
+            margin-top: 15px;
+        }
+
+        @media all and (max-width: 1200px) {
+            .flex {
+                flex-direction: column;
+            }
+
+            #clear {
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Chat Box</h1>
+                <h2 class="subtitle is-3">
+                    Vue.js
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <main id="app">
+
+                <!-- CHANNELS -->
+                <section id="salon" class="flex">
+                    <select v-model="selected">
+                        <option disabled value="">Channels disponibles</option>
+                        <option>Bot-spam</option>
+                        <option>Gaming</option>
+                        <option>Work</option>
+                    </select>
+                    <h2 class="subtitle is-4"><i class="fas fa-comments"></i> Channel actuel : {{ selected }} </h2>
+                </section>
+
+                <!-- CHAT -->
+                <section id="chat">
+                    <p v-for="message in channelSelected(messages, selected)" class="message"
+                        :class="{ 'you': message.author === 'you', 'bot': message.author !== 'you' }">
+                        {{ message.body }}
+                        <br>
+                        <!-- <span>{{ message.prenom }}</span> -->
+                        <span class="timestamp">{{ message.timestamp }}</span>
+                        <button class="button is-normal fakebouton" @click="message.edit = true"><i
+                                class="fas fa-pencil-alt modif"></i></button>
+                        <input v-show="message.edit == true" v-model="message.body"
+                            @keyup.enter="message.edit=false; $emit('update')">
+                        <button class="button is-normal fakebouton" @click="removeMessage(message)"><i
+                                class="fas fa-times close"></i></button>
+                    </p>
+                </section>
+
+                <!-- INPUTS + BOUTONS-->
+                <div class="flex" id="boutons">
+                    <form @submit.prevent="sendMessage('bot')" id="person1-form">
+                        <label for="person1-input"><i class="fas fa-robot"></i> Bot</label>
+                        <input v-model="botMessage" id="person1-input" type="text"
+                            placeholder="Bip Bip Boup Boup BOUp!">
+                        <button type="submit" class="button is-info">Envoyer</button>
+                    </form>
+
+                    <button @click="clearAllMessages" class="button is-danger" id="clear">Effacer les
+                        messages</button>
+
+                    <form @submit.prevent="sendMessage('you')" id="person2-form">
+                        <label for="person2-input" id="name"></label>
+                        <input v-model="youMessage" id="person2-input" type="text" placeholder="Entrez votre message">
+                        <button type="submit" class="button is-info">Envoyer</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

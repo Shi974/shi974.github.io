@@ -1,0 +1,468 @@
+/* ------------------------- */
+/* GENERAL */
+.card-content h3 {
+    text-align: center;
+}
+
+.section {
+    padding-bottom: 1em !important;
+    padding-top: 1em !important;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    /*margin-bottom: 6em; */
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* ------------------------- */
+/* NAVBAR */
+.fa-robot {
+    margin-right: 8px;
+}
+
+/* ------------------------- */
+/* HERO */
+h1:hover,
+h2:hover {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+}
+
+#pix {
+    min-width: 20vw !important;
+    max-width: 35vw !important;
+    border-radius: 50%;
+    margin-right: 10vw;
+}
+
+#pix:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    /* #2478af */
+}
+
+.is-three-quarters {
+    text-align: center;
+}
+
+/* ------------------------- */
+/* ABOUT ME */
+.is-4 {
+    margin-bottom: 0.5rem !important;
+}
+
+.html {
+    color: #e44d26;
+}
+
+.css {
+    color: #1799ea;
+}
+
+.fa-sass {
+    color: #c6538c;
+}
+
+.fa-bootstrap {
+    color: #563e7c;
+}
+
+.js {
+    color: #f7df1e;
+    /* #ecda1a */
+}
+
+.fa-vuejs {
+    color: #41b883;
+}
+
+.php {
+    color: #848db9;
+}
+
+.fa-laravel {
+    color: #f4645f;
+}
+
+.fa-wordpress-simple {
+    color: #55595d;
+}
+
+.docker {
+    color: #0997e5;
+}
+
+.magic {
+    color: purple;
+}
+
+.crop {
+    color: green;
+}
+
+.has-same-height .card {
+    height: 320px;
+    overflow: hidden;
+}
+
+.table-profile td,
+th {
+    border: none !important;
+}
+
+.table-profile td:first-of-type {
+    font-weight: bold;
+}
+
+.skills-content .media {
+    margin: 0 !important;
+    padding: 4px !important;
+    border: 0 !important;
+}
+
+.skills-content p {
+    text-align: center !important;
+}
+
+.skills-content .progress {
+    height: 6px !important;
+    margin-bottom: 5px;
+    width: 70%;
+    margin: auto !important;
+}
+
+#about img {
+    height: auto;
+    width: 80% !important;
+    border-radius: 15px;
+}
+
+/* ------------------------- */
+/* RESUME */
+#resume {
+    box-sizing: border-box;
+}
+
+#resume .section {
+    padding-top: 0 !important;
+}
+
+#resume .section-heading {
+    margin-bottom: 0 !important;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.tl-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.tl-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: white;
+    border: 4px solid #209cee;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30.5px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12.5px;
+}
+
+/* The actual content */
+.tl-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+#download {
+    margin-top: 1.5rem;
+}
+
+/* ------------------------- */
+/* PORTFOLIO */
+#portfolio .section-heading {
+    margin-bottom: 1em !important;
+}
+
+.portfolio-container .card {
+    margin-bottom: 2em;
+}
+
+.is-pulled-right {
+    margin-left: 10px;
+}
+
+.fa-external-link-alt,
+.fa-tools,
+.fa-ban {
+    margin-left: 5px;
+}
+
+/* ------------------------- */
+/* CONTACT */
+#contact {
+    margin: 50px 0;
+}
+
+#contact .section {
+    margin-top: 5px !important;
+}
+
+#contact .column {
+    padding-top: 0;
+}
+
+#contact .card-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0;
+}
+
+#contact th {
+    padding: 0;
+    margin: 0;
+}
+
+#contact td {
+    padding-top: 0;
+}
+
+#contact .has-addons {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .has-addons a {
+    margin-right: -5px;
+}
+
+#contact h5 {
+    font-weight: bold;
+}
+
+.iconesociale {
+    font-size: 1.4em;
+}
+
+/* ------------------------- */
+/* FOOTER */
+.footer {
+    padding-bottom: 1rem !important;
+}
+
+footer .section-heading {
+    margin-bottom: 2em !important;
+    margin-top: 1em;
+}
+
+footer .button {
+    margin-top: 10px;
+}
+
+.fa-home {
+    margin-left: 8px;
+}
+
+/* ------------------------- */
+/* RESPONSIVE => PHONES MAX 600PX WIDTH*/
+@media all and (max-width:600px) {
+
+    /* ---------------- */
+    /* GENERAL */
+    .card-content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* ---------------- */
+    /* HERO */
+    .hero-body {
+        flex-direction: column !important;
+    }
+
+    #pix {
+        max-width: 80vw !important;
+        max-height: auto !important;
+        margin-right: 0;
+    }
+
+    /* ---------------- */
+    /* ABOUT */
+    .skills-content {
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .skills-content .progress {
+        width: 100%;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    #about .column:nth-of-type(2) {
+        padding-bottom: 0 !important;
+    }
+
+    /* ---------------- */
+    /* SERVICES */
+    #services .box {
+        padding: 0 !important;
+        box-shadow: none;
+        width: 100% !important;
+    }
+
+    #services h4 {
+        text-align: center;
+    }
+
+    #services ul {
+        width: 100% !important;
+        margin-left: 0 !important; 
+    }
+
+    /* ---------------- */
+    /* RESUME */
+    #resume {
+        padding: 0 !important;
+    }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .tl-container {
+        width: 100%;
+        padding-left: 57px;
+        padding-right: 5px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .tl-container::before {
+        left: 47.5px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .tl-content {
+        padding: 10px 5px;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 19px;
+        top: 20px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    /* ---------------- */
+    /* CONTACT */
+    #contact {
+        margin-bottom: 1em;
+    }
+
+    #contact .column {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #contact td {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.85em;
+        text-align: center;
+    }
+
+    /* ---------------- */
+    /* FOOTER */
+    .footer {
+        padding: 1rem;
+    }
+}

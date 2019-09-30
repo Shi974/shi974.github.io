@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+
+* {
+  font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bloc {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row !important;
+}
+
+nav .nav-item {
+  color: #17721c !important;
+}
+
+nav .nav-item:hover {
+  color: #72173C !important;
+}
+
+nav .button {
+  background-color: #72173C !important;
+}
+
+nav .button:hover {
+  background-color: #17721c !important;
+}
+
+.hero {
+  background-color: #17721c !important;
+  margin-bottom: 15px;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.hero h1,
+.hero h2 {
+  color: white !important;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .container {
+  width: 100% !important;
+}
+
+main strong {
+  font-style: normal;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+main .subtitle {
+  font-size: 1.8em !important;
+}
+
+main #slider {
+  height: 370px;
+}
+
+main #poubelles {
+  padding-top: 0;
+}
+
+main ul>li {
+  font-size: 1.3em;
+}
+
+main article {
+  width: 100%;
+  margin: 15px;
+}
+
+main article .flex {
+  width: 50%;
+  margin: auto;
+}
+
+main article img {
+  width: 50px;
+}
+
+main article p {
+  font-size: 1.3em;
+}
+
+main article #pb_colors {
+  width: 70%;
+  margin-top: 0;
+}
+
+main #important {
+  margin-bottom: 0;
+  border: 2px solid black;
+  background-color: #17721c;
+  color: white !important;
+}
+
+main #important h2 {
+  color: white !important;
+}
+
+main #poubelles_couleurs {
+  border: 3px solid #17721c;
+  border-radius: 15px;
+  width: 80%;
+  padding: 1rem 0 !important;
+}
+
+main #poubelles_couleurs .art_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px !important;
+}
+
+main #poubelles_couleurs .side {
+  flex-direction: column !important;
+  max-width: 50%;
+}
+
+main #poubelles_couleurs .side .yellow {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  color: yellow;
+}
+
+main #poubelles_couleurs .side .green {
+  color: #17721c;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+
+main #poubelles_couleurs .side .blue {
+  color: blue;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+
+main #poubelles_couleurs .side .marroon {
+  color: #72173C;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+
+main #poubelles_couleurs .side article {
+  margin: 15px 0;
+  width: 50%;
+}
+
+footer {
+  background-color: #72173C !important;
+  padding: 3rem 0 !important;
+}
+
+footer .content,
+footer strong {
+  color: white !important;
+  font-size: 1.2em !important;
+}
+
+footer a {
+  color: #28A228;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #1BA39C;
+}
+
+footer #social>a {
+  margin: 25px;
+}
+
+@media all and (max-width: 900px) {
+  main {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  main .flex {
+    flex-direction: column !important;
+  }
+
+  main #poubelles_couleurs {
+    border: none;
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  main #poubelles_couleurs article {
+    width: 95vw !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

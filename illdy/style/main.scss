@@ -1,0 +1,220 @@
+/* BASICS : Declarations */
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:400,800');
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin column {
+    flex-direction: column;
+}
+
+$anthracite: #545454;
+
+$gris_clair: #798386;
+
+$yellow: #f1d204;
+
+/* GENERAL */
+#main {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: $anthracite;
+}
+
+.flex {
+    @include flex;
+}
+
+.column {
+    @include column;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.lato {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+#projects {
+    .project_img {
+        flex-wrap: nowrap;
+        img {
+           width: auto;
+        }
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background-color: $yellow;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    border: 3px solid $yellow;
+}
+
+.bloc {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    background-image: url("../images/header.jpg");
+    height: 100vh;
+    color: white;
+    nav {
+        padding-top: 10vh;
+    }
+    ul {
+        justify-content: space-around;
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+#banniere {
+    justify-content: center;
+    margin-top: 30vh;
+    h1 {
+        font-size: 5rem;
+    }
+    .boutons {
+        width: 600px;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    button {
+        width: 265px;
+    }
+    #btn_more {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 3px solid white;
+    }
+}
+
+/* MAIN */
+section {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+#about {
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects {
+    background-color: #fbfbfb;
+}
+
+.articles {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10vh;
+    padding-bottom: 7.5vh;
+    h3 {
+        font-size: 1.7rem;
+    }
+    i {
+        font-size: 2rem;
+    }
+}
+
+#latest_news {
+    background-color: #222f36;
+    height: 120vh;
+    p {
+        color: $gris_clair;
+    }
+    h2 {
+        color: white;
+        margin-bottom: 15px;
+    }
+    button {
+        width: 170px;
+        height: 50px;
+        justify-content: space-around;
+        word-spacing: 5px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+}
+
+/* ARTICLE */
+article {
+    max-width: 425px;
+    height: 250px;
+}
+
+#w_design {
+    color: #f18b6d;
+}
+
+#w_dev {
+    color: $yellow;
+}
+
+#seo {
+    color: #6a4d8a;
+}
+
+article p {
+    color: $anthracite;
+}
+
+.news_art {
+    justify-content: space-around;
+    width: 75%;
+    article {
+        background-color: white;
+        max-width: 425px;
+        height: 700px;
+        .texte {
+            padding: 20px 35px;
+            justify-content: space-around;
+            height: 57%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    a {
+        text-decoration: none;
+        align-self: flex-start;
+    }
+}
+
+/* FOOTER */
+footer {
+    color: $gris_clair;
+    #footer_nav {
+        background-color: #292825;
+        justify-content: space-around;
+        height: 40vh;
+        h4 {
+            color: white;
+        }
+        li {
+            padding: 15px;
+        }
+    }
+    #copyright {
+        background-color: #242320;
+        height: 10vh;
+        justify-content: center;
+        #white {
+            color: white;
+        }
+    }
+}
