@@ -307,6 +307,7 @@ th {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    padding: 0;
 }
 
 #contact .is-flex div p:first-child {
@@ -421,6 +422,10 @@ footer .button {
         padding: 0 !important;
     }
 
+    #resume h3 {
+        padding-top: 50px;
+    }
+
     /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
@@ -483,11 +488,12 @@ footer .button {
         padding-right: 0;
     }
 
-    #contact td {
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 0.85em;
-        text-align: center;
+    form {
+        padding-top: 0 !important;
+    }
+
+    .is-flex div {
+        margin: 10px;
     }
 
     /* ---------------- */

@@ -2,6 +2,15 @@
 <html lang="fr">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149281091-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149281091-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -304,13 +313,13 @@
                         <hr/>
                         <strong><i class="fas fa-award" alt=""></i> Certificats <i class="fas fa-award" alt=""></i></strong>
                         <ul>
+                            <li>Experte en qualité de projet Web - <a href="https://oqs.li/C6Q9BD/" target="_blank"
+                                title="Voir la certification Opquast dans une nouvelle fenêtre" class="is-link">Opquast <i 
+                                class="fas fa-external-link-alt has-text-link" alt=""></i></a></li>
                             <li><a href="https://inventaire.cncp.gouv.fr/fiches/2077/" target="_blank" class="is-link" 
                                 title="Ouvrir la certification dans une nouvelle fenêtre">
                                 Coder et déployer une application web simple <i class="fas fa-external-link-alt has-text-link" alt=""></i>
                             </a></li>
-                            <li><a
-                                href="resources/Opquast.pdf" target="_blank"
-                                title="Voir la certification Opquast en format PDF" class="is-link">Expert Opquast</a></li>
                             <li><a href="https://inventaire.cncp.gouv.fr/fiches/2085/" target="_blank" class="is-link" 
                                 title="Ouvrir la certification dans une nouvelle fenêtre">
                                 Méthodes agiles de gestion et amorçage de projet <i class="fas fa-external-link-alt has-text-link" alt=""></i>
@@ -737,9 +746,8 @@
                 <h4 class="subtitle is-5">Restons en contact</h4>
             </div>
             
-            <hr/>
+            <hr class="is-hidden-touch"/>
 
-            <!-- TODO : ajouter form contact via formspree -->
             <div class="columns">
                 <form class="column is-8 is-offset-1" action="https://formspree.io/terrentroy.anne@gmail.com" method="POST">
                     <div class="field">
@@ -769,7 +777,7 @@
                         </div>
                     </div>
 
-                    <input type="hidden" name="_subject" value="Nouveau message !" />
+                    <input type="hidden" name="_subject" value="Nouveau message via shi974github.io !" />
                     <input type="hidden" name="_next" value="//shi974.github.io/merci.html" />
         
                     <div class="field is-grouped has-text-centered">
@@ -838,26 +846,21 @@
     <!-- SCRIPTS JS -->
     <script>
         // MENU BURGER
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
-        });
+        $(document).ready(function() {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
 
-        //TODO : menu refermable auto ?
+                // Referme automatiquement le burger si un item du menu est cliqué
+                if ($(".navbar-item").click( function () {
+                    $(".navbar-burger").removeClass("is-active");
+                    $(".navbar-menu").removeClass("is-active");
+                })) {
+                }
+            });
+        });
 
         // jQuery HERO
         $(function () {
@@ -878,8 +881,6 @@
             });
 
         });
-
-        // TODO : intégrer Google Analytics
     </script>
 </body>
 
