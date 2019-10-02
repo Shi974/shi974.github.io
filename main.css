@@ -31,20 +31,34 @@ hr {
 /* HERO */
 h1:hover,
 h2:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
 }
 
+.hero-body {
+    margin-right: 0;
+    margin-top: 0;
+}
+
+#home .column:first-child {
+    text-align: center;
+}
+
+#home .column:last-child {
+    margin-right: 5%;
+    height: 50vh;
+    width: 20vw !important;
+}
+
 #pix {
-    min-width: 20vw !important;
-    max-width: 35vw !important;
     border-radius: 50%;
-    margin-right: 10vw;
+    width: 100%;
+    height: auto;
 }
 
 #pix:hover {
-    transform: scale(1.2);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.411);
     /* #2478af */
 }
 
@@ -278,39 +292,25 @@ th {
 /* ------------------------- */
 /* CONTACT */
 #contact {
-    margin: 50px 0;
+    margin: 0;
 }
 
 #contact .section {
     margin-top: 5px !important;
 }
 
-#contact .column {
-    padding-top: 0;
+#contact #button {
+    margin: auto;
 }
 
-#contact .card-content {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 0;
-}
-
-#contact th {
-    padding: 0;
-    margin: 0;
-}
-
-#contact td {
-    padding-top: 0;
-}
-
-#contact .has-addons {
-    display: flex;
+#contact .is-flex {
     flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
-#contact .has-addons a {
-    margin-right: -5px;
+#contact .is-flex div p:first-child {
+    font-weight: bold;
 }
 
 #contact h5 {
@@ -341,6 +341,12 @@ footer .button {
 }
 
 /* ------------------------- */
+/* MERCI */
+    .container {
+        text-align: center;
+    }
+
+/* ------------------------- */
 /* RESPONSIVE => PHONES MAX 600PX WIDTH*/
 @media all and (max-width:600px) {
 
@@ -357,10 +363,19 @@ footer .button {
         flex-direction: column !important;
     }
 
-    #pix {
-        max-width: 80vw !important;
-        max-height: 35vh !important;
+    h1 {
+        font-size: 2.8rem !important;
+    }
+
+    #home .column:last-child {
         margin-right: 0;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #pix {
+        max-width: 90%;
+        height: auto;
     }
 
     /* ---------------- */
@@ -443,6 +458,21 @@ footer .button {
     }
 
     /* ---------------- */
+    /* PORTFOLIO */
+    #portfolio .container {
+        margin: 0;
+    }
+
+    #portfolio .is-4 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #more {
+        padding: 0 !important;
+    }
+
+    /* ---------------- */
     /* CONTACT */
     #contact {
         margin-bottom: 1em;
@@ -464,5 +494,13 @@ footer .button {
     /* FOOTER */
     .footer {
         padding: 1rem;
+    }
+
+    /* ---------------- */
+    /* MERCI */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

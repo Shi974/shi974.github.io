@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anne-Gaëlle Terrentroy | Développeur Web</title>
+    <script src="https://kit.fontawesome.com/9a2a11b347.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="shortcut icon" href="resources/myAvatar.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar is-info is-fixed-top">
+        <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                        <span class="icon">
+                            <i class="fas fa-robot has-text-dark" alt=""></i>
+                        </span>
+                        <span>Anne-Gaëlle, Dev Web</span>
+                    </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html#about">
+                    <span class="icon">
+                        <i class="fas fa-address-card has-text-link" alt=""></i>
+                    </span>
+                    <span>A propos de moi</span>
+                </a>
+                <a class="navbar-item" href="index.html#services">
+                    <span class="icon">
+                        <i class="fas fa-laptop-code has-text-danger" alt=""></i>
+                    </span>
+                    <span>Services</span>
+                </a>
+                <a class="navbar-item" href="index.html#resume">
+                    <span class="icon">
+                        <i class="fas fa-graduation-cap has-text-grey-light" alt=""></i>
+                    </span>
+                    <span>Mon CV</span>
+                </a>
+                <a class="navbar-item" href="index.html#portfolio">
+                    <span class="icon">
+                        <i class="fas fa-th-list has-text-warning" alt=""></i>
+                    </span>
+                    <span>Portfolio</span>
+                </a>
+                <a class="navbar-item" href="index.html#contact">
+                    <span class="icon">
+                        <i class="fas fa-envelope has-text-primary" alt=""></i>
+                    </span>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero is-info is-fullheight is-fullheight-with-navbar" id="merci">
+        <div class="hero-body columns">
+            <div class="container column is-centered">
+                <h1 class="title is-1">
+                    Merci !
+                </h1>
+                <h2 class="subtitle is-3">
+                    <i class="fas fa-terminal has-text-grey-light is-hidden" alt=""></i> Votre message a bien été envoyé !
+                </h2>
+                <a href="index.html" class="button is-light">Retour à la page principale</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-heading">
+            <p>
+                Made with <strong><i class="fas fa-heart has-text-danger" alt="love" title="love"></i></strong> by <a 
+                href="http://shi974.github.io">Anne-Gaëlle T</a>.<br>
+                Code source sous licence <a href="http://opensource.org/licenses/mit-license.php" target="_blank" 
+                title="Ouvrir la documentation sur la licence MIT dans une nouvelle fenêtre">MIT</a>.<br>
+                Copyright <i class="far fa-copyright" alt=""></i> 2019 - Tous droits réservés.<br>
+                <a class="button is-link" href="index.html" alt="Retour accueil">Retour à l'accueil <i class="fas fa-home" id="up" alt=""></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS JS -->
+    <script>
+        // MENU BURGER
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+
+        //TODO : menu refermable auto ?
+
+        // TODO : intégrer Google Analytics
+    </script>
+</body>
+
+</html>
