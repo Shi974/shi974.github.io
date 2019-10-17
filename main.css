@@ -159,6 +159,34 @@ th {
 }
 
 /* ------------------------- */
+/* SERVICES */
+#services .box {
+    padding: 1.25rem 0.75rem;
+}
+
+#services .has-same-height {
+    height: 430px;
+}
+
+.flaticon {
+    width: 64px;
+    margin: 0 auto;
+}
+
+.auditlogos {
+    width: 128px;
+    margin: 15px;
+}
+
+#wbdv {
+    margin-bottom: 25px !important;
+}
+
+#gglsrch {
+    margin-bottom: 0 !important;
+}
+
+/* ------------------------- */
 /* RESUME */
 #resume {
     box-sizing: border-box;
@@ -405,6 +433,7 @@ footer .button {
         padding: 0 !important;
         box-shadow: none;
         width: 100% !important;
+        height: auto;
     }
 
     #services h4 {
