@@ -67,6 +67,47 @@ h2:hover {
 }
 
 /* ------------------------- */
+/* SERVICES */
+#services .box {
+    padding: 1.25rem 0.75rem;
+    hyphens: auto;
+}
+
+#services #servicescol {
+    flex-wrap: wrap;
+}
+
+#services #servicescol .column {
+    flex: 0 50%;
+}
+
+#services .button {
+    margin: 15px;
+}
+
+#services .has-same-height {
+    height: 420px;
+}
+
+.flaticon {
+    width: 64px;
+    margin: 0 auto;
+}
+
+.auditlogos {
+    width: 128px;
+    margin: 15px;
+}
+
+#wbdv {
+    margin-bottom: 25px !important;
+}
+
+#gglsrch {
+    margin-bottom: 0 !important;
+}
+
+/* ------------------------- */
 /* ABOUT ME */
 .is-4 {
     margin-bottom: 0.5rem !important;
@@ -156,34 +197,6 @@ th {
     height: auto;
     width: 80% !important;
     border-radius: 15px;
-}
-
-/* ------------------------- */
-/* SERVICES */
-#services .box {
-    padding: 1.25rem 0.75rem;
-}
-
-#services .has-same-height {
-    height: 430px;
-}
-
-.flaticon {
-    width: 64px;
-    margin: 0 auto;
-}
-
-.auditlogos {
-    width: 128px;
-    margin: 15px;
-}
-
-#wbdv {
-    margin-bottom: 25px !important;
-}
-
-#gglsrch {
-    margin-bottom: 0 !important;
 }
 
 /* ------------------------- */
@@ -408,6 +421,24 @@ footer .button {
     }
 
     /* ---------------- */
+    /* SERVICES */
+    #services .box {
+        padding: 0 !important;
+        box-shadow: none;
+        width: 100% !important;
+        height: auto;
+    }
+
+    #services h4 {
+        text-align: center;
+    }
+
+    #services ul {
+        width: 100% !important;
+        margin-left: 0 !important; 
+    }
+
+    /* ---------------- */
     /* ABOUT */
     .skills-content {
         padding-top: 0 !important;
@@ -425,24 +456,6 @@ footer .button {
 
     #about .column:nth-of-type(2) {
         padding-bottom: 0 !important;
-    }
-
-    /* ---------------- */
-    /* SERVICES */
-    #services .box {
-        padding: 0 !important;
-        box-shadow: none;
-        width: 100% !important;
-        height: auto;
-    }
-
-    #services h4 {
-        text-align: center;
-    }
-
-    #services ul {
-        width: 100% !important;
-        margin-left: 0 !important; 
     }
 
     /* ---------------- */
@@ -537,5 +550,19 @@ footer .button {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+/* RESPONSIVENESS SERVICES COLONNES */
+@media all and (max-width:1216px) and (min-width:770px) {
+    #services .box {
+        height: auto;
+        box-shadow: none;
+    }
+}
+
+@media all and (max-width:769px) and (min-width:600px) {
+    #services .box {
+        height: auto;
     }
 }
