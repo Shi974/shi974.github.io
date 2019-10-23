@@ -23,8 +23,9 @@ hr {
 
 /* ------------------------- */
 /* NAVBAR */
-.fa-robot {
-    margin-right: 8px;
+#icon {
+    margin-right: 5px;
+    width: 17px;
 }
 
 /* ------------------------- */
@@ -54,11 +55,12 @@ h2:hover {
     border-radius: 50%;
     width: 100%;
     height: auto;
+    transform: rotate(80deg);
 }
 
 #pix:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.411);
+    transform: scale(1.1) rotate(80deg);
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.411);
     /* #2478af */
 }
 
@@ -70,7 +72,6 @@ h2:hover {
 /* SERVICES */
 #services .box {
     padding: 1.25rem 0.75rem;
-    hyphens: auto;
 }
 
 #services #servicescol {
@@ -86,7 +87,7 @@ h2:hover {
 }
 
 #services .has-same-height {
-    height: 420px;
+    height: 400px;
 }
 
 .flaticon {
