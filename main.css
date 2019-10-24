@@ -82,6 +82,10 @@ h2:hover {
     flex: 0 50%;
 }
 
+#services h3 {
+    margin-top: 0;
+}
+
 #services .button {
     margin: 15px;
 }
@@ -307,7 +311,7 @@ th {
     border-radius: 6px;
 }
 
-#download {
+.download {
     margin-top: 1.5rem;
 }
 

@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/9a2a11b347.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
     <link rel="stylesheet" href="main.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <link rel="shortcut icon" href="resources/icon.png" type="image/x-icon">
 </head>
 
@@ -32,7 +32,7 @@
         <div class="navbar-brand">
                 <a class="navbar-item" href="#home">
                         <span class="icon">
-                            <!-- <i class="fas fa-robot has-text-dark" alt=""></i> -->
+                            <!-- <i class="fas fa-robot has-text-dark" aria-hidden="true"></i> -->
                             <img src="resources/icon.png" alt="" id="icon" />
                         </span>
                         <span>Anne-Gaëlle, Dev Web</span>
@@ -48,31 +48,31 @@
             <div class="navbar-end">
                 <a class="navbar-item" href="#services">
                     <span class="icon">
-                        <i class="fas fa-laptop-code has-text-danger" alt=""></i>
+                        <i class="fas fa-laptop-code has-text-danger" aria-hidden="true"></i>
                     </span>
                     <span>Services</span>
                 </a>
                 <a class="navbar-item" href="#about">
                     <span class="icon">
-                        <i class="fas fa-address-card has-text-link" alt=""></i>
+                        <i class="fas fa-address-card has-text-link" aria-hidden="true"></i>
                     </span>
                     <span>A propos de moi</span>
                 </a>
                 <a class="navbar-item" href="#resume">
                     <span class="icon">
-                        <i class="fas fa-graduation-cap has-text-grey-light" alt=""></i>
+                        <i class="fas fa-graduation-cap has-text-grey-light" aria-hidden="true"></i>
                     </span>
                     <span>Mon CV</span>
                 </a>
                 <a class="navbar-item" href="#portfolio">
                     <span class="icon">
-                        <i class="fas fa-th-list has-text-warning" alt=""></i>
+                        <i class="fas fa-th-list has-text-warning" aria-hidden="true"></i>
                     </span>
                     <span>Portfolio</span>
                 </a>
                 <a class="navbar-item" href="#contact">
                     <span class="icon">
-                        <i class="fas fa-envelope has-text-primary" alt=""></i>
+                        <i class="fas fa-envelope has-text-primary" aria-hidden="true"></i>
                     </span>
                     <span>Contact</span>
                 </a>
@@ -89,11 +89,11 @@
                     Anne-Gaëlle Terrentroy
                 </h1>
                 <h2 class="subtitle is-3">
-                    <i class="fas fa-terminal has-text-grey-light is-hidden" alt=""></i> Développeur Web Full Stack
+                    <i class="fas fa-terminal has-text-grey-light is-hidden" aria-hidden="true"></i> Développeur Web Full Stack
                 </h2>
             </div>
             <div class="column">
-                <img src="resources/pix.jpg" id="pix" />
+                <img src="resources/pix.jpg" id="pix" alt="Photo de profil de Anne-Gaëlle" />
             </div>
         </div>
     </section>
@@ -101,7 +101,7 @@
     <!-- Services -->
     <section class="section" id="services">
         <div class="section-heading">
-            <h3 class="title is-2"><i class="fas fa-laptop-code has-text-danger" alt=""></i> Services</h3>
+            <h3 class="title is-2"><i class="fas fa-laptop-code has-text-danger" aria-hidden="true"></i> Services</h3>
             <h4 class="subtitle is-5">Ce que je peux faire pour vous</h4>
         </div>
         <div class="container">
@@ -122,10 +122,11 @@
                 De plus, je le fais de manière à ce que votre site réponde aux <strong>standards de qualité du web</strong> (<a 
                 href="https://checklists.opquast.com/fr/" target="_blank" 
                 title="Ouvrir le référentiel Opquast dans une nouvelle fenêtre">référentiel Opquast <i 
-                class="fas fa-external-link-alt has-text-link" alt=""></i></a>) et soit <strong>accessible</strong> à 
-                tous les types de publics <i class="fas fa-universal-access has-text-info" alt=""></i> sur tous les types de supports. <i 
-                class="fas fa-mobile-alt has-text-info" alt="icône de portable"></i> <i class="fas fa-tablet-alt has-text-primary" 
-                alt="icône de tablette"></i> <i class="fas fa-desktop has-text-link" alt="icône d'écran d'ordinateur"></i>
+                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>) et soit <strong>accessible</strong> à 
+                tous les types de publics <i class="fas fa-universal-access has-text-info" aria-hidden="true"></i> sur tous les types de supports.
+                <span class="sr-only">(mobile, tablettes et ordinateurs)</span>
+                <i class="fas fa-mobile-alt has-text-info" aria-hidden="true"></i> <i class="fas fa-tablet-alt has-text-primary" 
+                aria-hidden="true"></i> <i class="fas fa-desktop has-text-link" aria-hidden="true"></i>
                 <br/>
                 Ci-dessous vous trouverez des exemples de services que je fournis, et n'hésitez pas à aller voir ma galerie de projets.<br/>
                     <a href="#portfolio" class="button is-info is-rounded">
@@ -136,10 +137,8 @@
                 <div class="column">
                     <div class="box has-same-height">
                         <div class="content">
-                            <h4 class="title is-5 flaticon">
-                                <img src="resources/web.svg" alt="">
-                                <h3 class="subtitle is-4">Site vitrine</h3>
-                            </h4>
+                            <img src="resources/web.svg" alt="" class="flaticon">
+                            <h4 class="title is-4">Site vitrine</h4>
                             <!-- https://image.flaticon.com/icons/svg/123/123400.svg -->
                             <!-- https://image.flaticon.com/icons/svg/1055/1055680.svg -->
                             <p>
@@ -156,14 +155,12 @@
                 <div class="column">
                     <div class="box has-same-height">
                         <div class="content">
-                            <h4 class="title is-5 flaticon">
-                                <img src="resources/shop.svg" alt="">
-                                <h3 class="subtitle is-4">Site e-commerce</h3>
-                            </h4>
+                            <img src="resources/shop.svg" alt="" class="flaticon">
+                            <h4 class="title is-4">Site e-commerce</h4>
                             <!-- https://img.icons8.com/dusk/64/000000/e-commerce.png -->
                             <p>
                                 Le site <strong>E-commerce</strong> (ou site marchand) permet de <strong>vendre</strong> ou de 
-                                <strong>commander</strong> des produits ou des services <strong>en ligne</strong>. Les articles peuvent être 
+                                <strong>commander</strong> des produits ou des services <strong>en ligne</strong>. Les divs peuvent être 
                                 triés par prix, thème, ou autre en fonction du besoin.<br/>
                                 Le paiement peut se faire en ligne, mais pas forcément. En effet, cela peut concerner uniquement la 
                                 <strong>réservation</strong> d'un service ou produit.<br/>
@@ -176,9 +173,8 @@
                 <div class="column">
                     <div class="box has-same-height">
                         <div class="content">
-                            <h4 class="title is-5 flaticon">
-                                <img src="resources/app.svg" alt=""></h4>
-                                <h3 class="subtitle is-4">Application Web <br> Logiciel métier</h3>
+                            <img src="resources/app.svg" alt="" class="flaticon">
+                            <h4 class="title is-4">Application Web <br>Logiciel métier</h4>
                             <!-- https://image.flaticon.com/icons/svg/230/230312.svg -->
                             <p>
                                 Une <strong>solution innovante spécifique à votre entreprise</strong> qui 
@@ -197,16 +193,15 @@
                 <div class="column">
                     <div class="box has-same-height">
                         <div class="content">
-                            <h4 class="title is-5 flaticon">
-                                <img src="resources/cms.svg" alt=""></h4>
-                                <h3 class="subtitle is-4">Gestionnaire de contenu</h3>
+                            <img src="resources/cms.svg" alt="" class="flaticon">
+                            <h4 class="title is-4">Gestionnaire de contenu</h4>
                             <!-- https://image.flaticon.com/icons/svg/230/230307.svg -->
                             <br/>
                             <p>
                                 Un <strong>gestionnaire de contenu</strong> sert à intégrer facilement un site web ou site marchand. 
                                 Celui-ci permet ainsi au propriétaire de pouvoir <strong>gérer lui-même</strong> le contenu de son site.<br/>
                                 Je vous accompagne dans la <strong>mise en place du gestionnaire de contenu</strong> (CMS) et du <strong>site 
-                                internet</strong>.<br/> Ensuite, tout est possible : ajouter, modifier, supprimer des posts ou articles; tout 
+                                internet</strong>.<br/> Ensuite, tout est possible : ajouter, modifier, supprimer des posts ou divs; tout 
                                 cela est <strong>à portée de clic</strong> !
                             </p>
                         </div>
@@ -216,34 +211,33 @@
             <div class="columns">
                 <div class="column">
                     <div class="box">
-                            <div class="content">
-                                <h4 class="title is-5 flaticon">
-                                    <img src="resources/audit.svg" alt=""></h4>
-                                    <h3 class="subtitle is-4">Audit de qualité web</h3>
-                                <p>
-                                    L'audit est le meilleur moyen pour <strong>mesurer les qualités et les défauts</strong> d'un site web. Il 
-                                    sert de point de départ pour planifier une éventuelle <strong>refonte</strong> ou <strong>évolution</strong> 
-                                    du site. Le moteur de recherche Google lui-même s'appuie sur la qualité pour classer les sites web lors des 
-                                    recherches. La qualité n'est donc pas à négliger lorsque vous voulez que votre site ait un impact.
-                                    <br/>
-                                    <br/>
-                                    Je réalise des audits afin de mesurer l'<strong>accessibilité</strong>, les <strong>performances</strong>, 
-                                    l'<strong>ergonomie</strong>, les <strong>qualités techniques</strong> et la <strong>visibilité</strong> de 
-                                    votre site, et pour ce faire, j'utilise divers outils afin d'<strong>optimiser</strong> l'audit.<br>
-                                    Cette analyse selon le <strong>modèle VPTCS</strong> (visibilité, perception, technique, contenus, services) 
-                                    permet de donner des <strong>axes d'amélioration</strong> dans le but d'<strong>accroître le public 
-                                    cible</strong> et <strong>améliorer la qualité globale</strong> de votre site web.<br>
-                                    Pour faciliter la compréhension, tous les résultats sont <strong>documentés</strong> et 
-                                    <strong>commentés</strong> via le rapport d'audit.
-                                    <br/>
-                                    <div>
-                                        <img class="auditlogos" src="resources/opquast.png" title="Opquast, référentiel en qualité du web"/>
-                                        <img src="resources/webdev.svg" class="auditlogos" id="wbdv" title="web.dev, outil d'analyse de sites" />
-                                        <img src="resources/gsc.png" class="auditlogos" id="gglsrch" 
-                                        title="Google Search Console, outil de mesure pour le trafic et la performance des sites" />
-                                    </div>
-                                </p>
-                            </div>
+                        <div class="content">
+                            <img src="resources/audit.svg" alt="" class="flaticon">
+                            <h4 class="title is-4">Audit de qualité web</h4>
+                            <p>
+                                L'audit est le meilleur moyen pour <strong>mesurer les qualités et les défauts</strong> d'un site web. Il 
+                                sert de point de départ pour planifier une éventuelle <strong>refonte</strong> ou <strong>évolution</strong> 
+                                du site. Le moteur de recherche Google lui-même s'appuie sur la qualité pour classer les sites web lors des 
+                                recherches. La qualité n'est donc pas à négliger lorsque vous voulez que votre site ait un impact.
+                                <br/>
+                                <br/>
+                                Je réalise des audits afin de mesurer l'<strong>accessibilité</strong>, les <strong>performances</strong>, 
+                                l'<strong>ergonomie</strong>, les <strong>qualités techniques</strong> et la <strong>visibilité</strong> de 
+                                votre site, et pour ce faire, j'utilise divers outils afin d'<strong>optimiser</strong> l'audit.<br>
+                                Cette analyse selon le <strong>modèle VPTCS</strong> (visibilité, perception, technique, contenus, services) 
+                                permet de donner des <strong>axes d'amélioration</strong> dans le but d'<strong>accroître le public 
+                                cible</strong> et <strong>améliorer la qualité globale</strong> de votre site web.<br>
+                                Pour faciliter la compréhension, tous les résultats sont <strong>documentés</strong> et 
+                                <strong>commentés</strong> via le rapport d'audit.
+                                <br/>
+                                <span>
+                                    <img class="auditlogos" src="resources/opquast.png" title="Opquast, référentiel en qualité du web"/>
+                                    <img src="resources/webdev.svg" class="auditlogos" id="wbdv" title="web.dev, outil d'analyse de sites" />
+                                    <img src="resources/gsc.png" class="auditlogos" id="gglsrch" 
+                                    title="Google Search Console, outil de mesure pour le trafic et la performance des sites" />
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,7 +247,7 @@
     <!-- About -->
     <section class="section" id="about">
         <div class="section-heading">
-            <h3 class="title is-2"><i class="fas fa-address-card has-text-link" alt=""></i> A propos de moi</h3>
+            <h3 class="title is-2"><i class="fas fa-address-card has-text-link" aria-hidden="true"></i> A propos de moi</h3>
             <h4 class="subtitle is-5">👩‍💻 Geekette autodidacte passionnée de pop culture ✌️</h4>
             <div class="container">
                 <p>Développeuse Web originaire de l'<strong>Île de la Réunion</strong> 🌴, j'aime avant tout les <strong>nouvelles 
@@ -269,237 +263,223 @@
             <div class="card-content skills-content column">
                 <h3 class="title is-4">Mes compétences</h3>
                 <div class="content">
-                    <article class="media">
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>Une tonne de créativité et de débrouillardise <i class="fas fa-magic magic" alt=""></i></strong>
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>Une tonne de créativité et 
+                                        de débrouillardise <i class="fas fa-magic magic" aria-hidden="true"></i></strong>
                                     <br>
                                     <progress class="progress is-info" value="100" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
-                    <article class="media">
+                    </div>
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>50 kilos de HTML <i class="fab fa-html5 html" alt=""></i></strong>
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>50 kilos de HTML <i 
+                                        class="fab fa-html5 html" aria-hidden="true"></i></strong>
                                     <br>
                                     <progress class="progress is-info" value="95" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
-                    <article class="media">
+                    </div>
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>10 litres de CSS <i class="fab fa-css3-alt css" alt=""></i> // SASS <i class="fab fa-sass" 
-                                        alt=""></i>, Bulma, BootStrap <i class="fab fa-bootstrap" alt=""></i></strong>
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>10 litres de CSS <i 
+                                        class="fab fa-css3-alt css" aria-hidden="true"></i> // SASS <i class="fab fa-sass" 
+                                        aria-hidden="true"></i>, Bulma, BootStrap <i class="fab fa-bootstrap" aria-hidden="true"></i></strong>
                                     <br>
                                     <progress class="progress is-info" value="85" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
-                    <article class="media">
+                    </div>
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>3 cuillères à soupe de JavaScript <i class="fab fa-js js" alt=""></i> // Vue.js <i 
-                                        class="fab fa-vuejs" alt=""></i>, jQuery</strong>
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>3 cuillères à soupe de 
+                                        JavaScript <i class="fab fa-js js" aria-hidden="true"></i> // Vue.js <i 
+                                        class="fab fa-vuejs" aria-hidden="true"></i>, jQuery</strong>
                                     <br>
                                     <progress class="progress is-info" value="80" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
-                    <article class="media">
+                    </div>
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>5 pots de PHP <i class="fab fa-php php" alt=""></i> // Composer, Laravel <i 
-                                        class="fab fa-laravel" alt=""></i>, Wordpress <i class="fab fa-wordpress-simple" alt=""></i>, 
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>5 pots de PHP <i 
+                                        class="fab fa-php php" aria-hidden="true"></i> // Composer, Laravel <i 
+                                        class="fab fa-laravel" aria-hidden="true"></i>, Wordpress <i class="fab fa-wordpress-simple" 
+                                        aria-hidden="true"></i>, 
                                         October</strong>
                                     <br>
                                     <progress class="progress is-info" value="85" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
-                    <article class="media">
+                    </div>
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>Une pincée de design graphique <i class="fas fa-crop crop" alt=""></i> // Photofiltre Studio, 
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>Une pincée de design 
+                                        graphique <i class="fas fa-crop crop" aria-hidden="true"></i> // Photofiltre Studio, 
                                         Photoshop</strong>
                                     <br>
                                     <progress class="progress is-info" value="65" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
-                    <article class="media">
+                    </div>
+                    <div class="media">
                         <div class="media-content">
                             <div class="content">
                                 <p>
-                                    <i class="fas fa-angle-right has-text-grey-light" alt=""></i> <strong>Le tout saupoudré de Firebase Tools, Heroku, Docker <i class="fab fa-docker docker" alt=""></i>
+                                    <i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> <strong>Le tout saupoudré de 
+                                        Firebase Tools, Heroku, Docker <i class="fab fa-docker docker" aria-hidden="true"></i>
                                     </strong>
                                     <br>
                                     <progress class="progress is-info" value="85" max="100"></progress>
                                 </p>
                             </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
             <div class="column has-text-centered" id="codepix">
-                <img src="resources/code.jpg" alt="Placeholder image">
+                <img src="resources/code.jpg" alt="">
             </div>
         </div>
-        <!-- <div class="columns has-same-height">
-            <div class="column">
-                <div> <!-- class="box" 
-                    <div class="content">
-                        <h4 class="title is-5 has-text-centered">Développement Front End <i class="far fa-eye has-text-info" alt=""></i></h4>
-                        Le développement front end est la partie <strong>visible</strong> d'un site web : son <strong>apparence</strong> 
-                        graphique et son <strong>interface</strong>.<br>
-                        Je développe cette partie en utilisant les langages <strong>HTML5</strong>, <strong>CSS3</strong> et 
-                        <strong>JavaScript</strong>.<br>
-                        J'utilise des outils récents (<strong>frameworks</strong>) tels que <strong>Vue.js</strong>, <strong>Bulma</strong>, 
-                        <strong>Bootstrap</strong>, etc.<br/>
-                        Je développe de manière à ce que le site soit <strong>accessible</strong> à tout le monde. <i 
-                        class="fas fa-universal-access has-text-info" alt=""></i>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div> <!-- class="box" 
-                    <div class="content">
-                        <h4 class="title is-5 has-text-centered">Développement Back End <i class="fas fa-database has-text-info" alt=""></i></h4>
-                        Le développement back end est plutôt la partie "<strong>cachée</strong>" d'un site, il se trouve du côté 
-                        <strong>serveur</strong>.<br/>
-                        Je développe cette partie en utilisant des langages serveurs, comme <strong>PHP</strong> ou <strong>Node.js</strong>.
-                        <br/>
-                        Lié avec une <strong>base de données</strong>, le serveur envoye les informations à afficher sur la page web de manière 
-                        <strong>dynamique</strong> !
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section>
 
     <!-- Resume -->
     <section class="section" id="resume">
         <div class="section-heading">
-            <h3 class="title is-2"><i class="fas fa-graduation-cap has-text-grey-light" alt=""></i> Curriculum Vitae</h3>
+            <h3 class="title is-2"><i class="fas fa-graduation-cap has-text-grey-light" aria-hidden="true"></i> Curriculum Vitae</h3>
             <h4 class="subtitle is-5">Un peu plus sur mon passé professionnel</h4>
 
             <div class="timeline has-background-light">
                 <div class="tl-container left">
                     <div class="tl-content">
                     <h5 class="subtitle is-5">2019</h5>
-                    <p>
-                        <strong><i class="fas fa-user-graduate" alt=""></i> Diplômes <i class="fas fa-user-graduate" alt=""></i></strong>
+                    <div>
+                        <strong><i class="fas fa-user-graduate" aria-hidden="true"></i> Diplômes <i class="fas fa-user-graduate" 
+                            aria-hidden="true"></i>
+                        </strong>
                         <ul>
                             <li>Développeur Web Full Stack - 7 mois - <a class="is-link" href="https://simplonreunion.co/" target="_blank" 
-                                alt="Aller sur le site de Simplon Réunion" title="Ouvrir le site de Simplon Réunion dans une nouvelle fenêtre">
-                                <em>Simplon</em> <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                title="Ouvrir le site de Simplon Réunion dans une nouvelle fenêtre">
+                                <em>Simplon</em> <i class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                         <hr/>
-                        <strong><i class="fas fa-award" alt=""></i> Certificats <i class="fas fa-award" alt=""></i></strong>
+                        <strong><i class="fas fa-award" aria-hidden="true"></i> Certificats <i class="fas fa-award" aria-hidden="true"></i>
+                        </strong>
                         <ul>
                             <li>Experte de la qualité en projet Web - <a href="https://oqs.li/C6Q9BD/" target="_blank"
                                 title="Voir la certification Opquast dans une nouvelle fenêtre" class="is-link">Opquast <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a></li>
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a></li>
                             <li><a href="https://inventaire.cncp.gouv.fr/fiches/2077/" target="_blank" class="is-link" 
                                 title="Ouvrir la certification dans une nouvelle fenêtre">
-                                Coder et déployer une application web simple <i class="fas fa-external-link-alt has-text-link" alt=""></i>
+                                Coder et déployer une application web simple <i class="fas fa-external-link-alt has-text-link" 
+                                aria-hidden="true"></i>
                             </a></li>
                             <li><a href="https://inventaire.cncp.gouv.fr/fiches/2085/" target="_blank" class="is-link" 
                                 title="Ouvrir la certification dans une nouvelle fenêtre">
-                                Méthodes agiles de gestion et amorçage de projet <i class="fas fa-external-link-alt has-text-link" alt=""></i>
+                                Méthodes agiles de gestion et amorçage de projet <i class="fas fa-external-link-alt has-text-link" 
+                                aria-hidden="true"></i>
                             </a></li>
                         </ul>
                         <hr/>
-                        <strong><i class="fas fa-briefcase" alt=""></i> Expérience <i class="fas fa-briefcase" alt=""></i></strong>
+                        <strong><i class="fas fa-briefcase" aria-hidden="true"></i> Expérience <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        </strong>
                         <ul>
                             <li>Développeur Web - Stage / 1 mois - <a class="is-link" href="https://www.adrie.fr/" target="_blank" 
-                                alt="Aller sur le site de l'ADRIE" title="Ouvrir le site de l'ADRIE dans une nouvelle fenêtre"><em>ADRIE</em> <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                title="Ouvrir le site de l'ADRIE dans une nouvelle fenêtre"><em>ADRIE</em> <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </li>
-                            <li><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisation d'une application web de collecte 
-                                gestion de collecte de déchets</li>
+                            <li><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisation d'une application web de 
+                                collecte gestion de collecte de déchets</li>
                         </ul>
-                    </p>
+                    </div>
                     </div>
                 </div>
                 <div class="tl-container right">
                     <div class="tl-content">
                         <h5 class="subtitle is-5">2018</h5>
-                        <p>
-                            <strong><i class="fas fa-award" alt=""></i> Certificats <i class="fas fa-award" alt=""></i></strong>
+                        <div>
+                            <strong><i class="fas fa-award" aria-hidden="true"></i> Certificats <i class="fas fa-award" aria-hidden="true"></i>
+                            </strong>
                             <ul>
                                 <li><a
-                                    href="resources/certificates/html-css-oc.pdf" target="_blank" title="Voir la certification en format PDF" class="is-link">
-                                    Apprenez à créer un site web avec HTML5 et CSS3 - OpenClassrooms
+                                    href="resources/certificates/html-css-oc.pdf" target="_blank" title="Voir la certification en format PDF" 
+                                    class="is-link">Apprenez à créer un site web avec HTML5 et CSS3 - OpenClassrooms
                                 </a></li>
                                 <li><a
-                                    href="resources/certificates/js.pdf" target="_blank" title="Voir la certification en format PDF" class="is-link">
-                                    JavaScript Tutorial Course - SoloLearn
+                                    href="resources/certificates/js.pdf" target="_blank" title="Voir la certification en format PDF" 
+                                    class="is-link">JavaScript Tutorial Course - SoloLearn
                                 </a></li>
                                 <li><a
-                                    href="resources/certificates/responsive-web-design.pdf" target="_blank" title="Voir la certification en format PDF" 
-                                    class="is-link">Responsive Web Design - Free Code Camp
+                                    href="resources/certificates/responsive-web-design.pdf" target="_blank" 
+                                    title="Voir la certification en format PDF" class="is-link">Responsive Web Design - Free Code Camp
                                 </a></li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="tl-container left">
                     <div class="tl-content">
                         <h5 class="subtitle is-5">2015</h5>
-                        <p>
-                            <strong><i class="fas fa-user-graduate" alt=""></i> Diplômes <i class="fas fa-user-graduate" alt=""></i></strong>
+                        <div>
+                            <strong><i class="fas fa-user-graduate" aria-hidden="true"></i> Diplômes <i class="fas fa-user-graduate" 
+                                aria-hidden="true"></i></strong>
                             <ul>
                                 <li>Master MEEF Second Degré</li>
-                                <li><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Métiers de l'enseignement, de l'éducation et de 
-                                    la formation - Spécialité Anglais</li>
+                                <li><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Métiers de l'enseignement, de 
+                                    l'éducation et de la formation - Spécialité Anglais</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="tl-container right">
                     <div class="tl-content">
                         <h5 class="subtitle is-5">2013 - 2018</h5>
-                        <p>
-                            <strong><i class="fas fa-briefcase" alt=""></i> Expérience <i class="fas fa-briefcase" alt=""></i></strong>
+                        <div>
+                            <strong><i class="fas fa-briefcase" aria-hidden="true"></i> Expérience <i class="fas fa-briefcase" 
+                                aria-hidden="true"></i></strong>
                             <ul>
                                 <li>Professeure - 5 ans</li>
-                                <li><i class="fas fa-angle-right has-text-grey-light" alt=""></i> d'anglais en second degré</li>
-                                <li><i class="fas fa-angle-right has-text-grey-light" alt=""></i> particulier</li>
+                                <li><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> d'anglais en second degré</li>
+                                <li><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> particulier</li>
                                 <li>Assistante d'Education - 16 mois </li>
                                 <li>Agent Contractuel - 2 mois - Préfecture de Saint-Denis</li>
                                 <li>Agent au Registre des Commerces et des Sociétés - 8 mois</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div> 
 
-            <a href="resources/AnneGaelle-CurriculumVitae.pdf" class="button is-link is-medium" id="download" 
+            <a href="resources/AnneGaelle-CurriculumVitae.pdf" class="button is-link is-medium download" 
             title="Télécharger mon CV au format PDF">
                 <span class="icon">
-                    <i class="fas fa-file-alt" alt=""></i>
+                    <i class="fas fa-file-alt" aria-hidden="true"></i>
                 </span>
                 <span>Télécharger mon CV</span>
             </a>
-            <a href="resources/certificates/certificates.pdf" class="button is-link is-medium" id="download" 
-            title="Télécharger mon CV au format PDF">
+            <a href="resources/certificates/certificates.pdf" class="button is-link is-medium download" title="Télécharger mon CV au format PDF">
                 <span class="icon">
-                        <i class="fas fa-award" alt=""></i>
+                        <i class="fas fa-award" aria-hidden="true"></i>
                 </span>
                 <span>Voir toutes mes certifications</span>
             </a>
@@ -510,7 +490,7 @@
     <section class="section" id="portfolio">
         <div class="container">
             <div class="section-heading">
-                <h3 class="title is-2"><i class="fas fa-th-list has-text-warning" alt=""></i> Portfolio</h3>
+                <h3 class="title is-2"><i class="fas fa-th-list has-text-warning" aria-hidden="true"></i> Portfolio</h3>
                 <h4 class="subtitle is-5">Mes derniers projets</h4>
             </div>
             <br>
@@ -536,17 +516,17 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Plateforme de gestion de points de 
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Plateforme de gestion de points de 
                                         collecte pour l'<a href="https://www.adrie.fr/" target="_blank" title="Ouvrir le site de l'ADRIE dans une 
                                         nouvelle fenêtre">ADRIE</a></span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée avec Laravel</span>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée avec Laravel</span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="http://adrie-collecte.herokuapp.com/" target="_blank" alt="Ouvrir l'application web dans une nouvelle 
-                                fenêtre" title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <div class="card-footer-item">Code source <i class="fas fa-ban has-text-danger" alt=""></i></div>
+                                <a href="http://adrie-collecte.herokuapp.com/" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <div class="card-footer-item">Code source <i class="fas fa-ban has-text-danger" aria-hidden="true"></i></div>
                             </footer>
                         </div>
                         <!-- Illdy -->
@@ -566,19 +546,19 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Page web démo</span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée à partir d'une charte graphique 
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Page web démo</span><br/>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée à partir d'une charte graphique 
                                         spécifique</span><br/>         
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée en SASS</span>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée en SASS</span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="illdy/index.html" target="_blank" alt="Ouvrir le site dans une nouvelle fenêtre" 
-                                title="Ouvrir le site web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <a href="https://github.com/Shi974/illdy" target="_blank" alt="Ouvrir le code source du site dans 
-                                une nouvelle fenêtre" title="Ouvrir le code source du site dans une nouvelle fenêtre" 
-                                class="card-footer-item">Code source <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                <a href="illdy/index.html" target="_blank" title="Ouvrir le site web dans une nouvelle fenêtre" 
+                                class="card-footer-item">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Shi974/illdy" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le code source du site dans une nouvelle fenêtre">Code source <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </footer>
                         </div>
                         <!-- To Do List -->
@@ -598,19 +578,19 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Application To Do List 
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Application To Do List 
                                     </span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée avec Vue.js</span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Déployée sur Firebase</span>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée avec Vue.js</span><br/>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Déployée sur Firebase</span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="https://todo-list974.firebaseapp.com/" target="_blank" alt="Ouvrir l'application web dans une nouvelle 
-                                fenêtre" title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <a href="https://github.com/Shi974/To-Do-List" target="_blank" alt="Ouvrir le code source de l'application dans 
-                                une nouvelle fenêtre" title="Ouvrir le code source de l'application dans une nouvelle fenêtre" 
-                                class="card-footer-item">Code source <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                <a href="https://todo-list974.firebaseapp.com/" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Shi974/To-Do-List" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le code source de l'application dans une nouvelle fenêtre">Code source <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </footer>
                         </div>
                     </div>
@@ -623,7 +603,7 @@
                                     <span>Vuegram</span>
                                     <span class="is-pulled-right">
                                         <span class="tag is-default">Appli Web</span>
-                                        <span class="tag is-default has-background-warning">En cours <i class="fas fa-tools" alt=""></i></span>
+                                        <span class="tag is-default has-background-warning">En cours <i class="fas fa-tools" aria-hidden="true"></i></span>
                                     </span>
                                 </p>
                             </header>
@@ -634,21 +614,21 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Application monopage de réseau 
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Application monopage de réseau 
                                         social</span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée avec Vue.js et Firebase Tools
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée avec Vue.js et Firebase Tools
                                     </span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> En cours de développement
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> En cours de développement
                                     </span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="https://vuegram-d3531.web.app/" target="_blank" alt="Ouvrir l'application web dans une nouvelle 
-                                fenêtre" title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <a href="https://github.com/Shi974/vuegram" target="_blank" alt="Ouvrir le code source de l'application dans une 
-                                nouvelle fenêtre" title="Ouvrir le code source de l'application dans une nouvelle fenêtre" 
-                                class="card-footer-item">Code source <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                <a href="https://vuegram-d3531.web.app/" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Shi974/vuegram" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le code source de l'application dans une nouvelle fenêtre">Code source <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </footer>
                         </div>
                         <!-- Tri Sélectif -->
@@ -668,18 +648,20 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Page web d'information</span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée à partir d'une charte graphique spécifique</span><br/>         
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée en SCSS + framework Bulma</span>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Page web d'information</span><br/>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée à partir d'une 
+                                        charte graphique spécifique</span><br/>         
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée en SCSS + framework 
+                                        Bulma</span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="Tri_selectif/index.html" target="_blank" alt="Ouvrir le site dans une nouvelle fenêtre" 
-                                title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <a href="https://github.com/Shi974/Tri-Selectif" target="_blank" alt="Ouvrir le code source de l'application dans 
-                                une nouvelle fenêtre" title="Ouvrir le code source de l'application dans une nouvelle fenêtre" 
-                                class="card-footer-item">Code source <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                <a href="Tri_selectif/index.html" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Shi974/Tri-Selectif" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le code source de l'application dans une nouvelle fenêtre">Code source <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </footer>
                         </div>
                         <!-- Humans United -->
@@ -699,20 +681,20 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Participation à la Webcup 2019 <i 
-                                        class="fas fa-medal" alt=""></i></span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Site entièrement accessible <i 
-                                        class="fas fa-universal-access has-text-info" alt=""></i> et responsive
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Participation à la Webcup 2019 <i 
+                                        class="fas fa-medal" aria-hidden="true"></i></span><br/>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Site entièrement accessible <i 
+                                        class="fas fa-universal-access has-text-info" aria-hidden="true"></i> et responsive
                                     </span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisé avec Laravel
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisé avec Laravel
                                     </span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="http://humans-united.herokuapp.com/" target="_blank" alt="Ouvrir le site web dans une nouvelle 
-                                fenêtre" title="Ouvrir le site web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <div class="card-footer-item">Code source <i class="fas fa-ban has-text-danger" alt=""></i></div>
+                                <a href="http://humans-united.herokuapp.com/" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le site web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <div class="card-footer-item">Code source <i class="fas fa-ban has-text-danger" aria-hidden="true"></i></div>
                             </footer>
                         </div>
                     </div>
@@ -735,18 +717,18 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Application de gestion d'évènements e-sports</span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Les utilisateurs peuvent s'inscrire aux events</span><br/>         
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée en groupe avec Laravel</span>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Application de gestion d'évènements e-sports</span><br/>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Les utilisateurs peuvent s'inscrire aux events</span><br/>         
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée en groupe avec Laravel</span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="http://gdk-350ms.herokuapp.com/" target="_blank" alt="Ouvrir l'application web dans une nouvelle 
-                                fenêtre" title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <a href="https://github.com/Shi974/350ms" target="_blank" alt="Ouvrir le code source de l'application dans une 
-                                nouvelle fenêtre" title="Ouvrir le code source de l'application dans une nouvelle fenêtre" 
-                                class="card-footer-item">Code source <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                <a href="http://gdk-350ms.herokuapp.com/" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Shi974/350ms" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le code source de l'application dans une nouvelle fenêtre">Code source <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </footer>
                         </div>
                         <!-- Red-Samurai -->
@@ -766,17 +748,17 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Application de vote réalisée à la demande 
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Application de vote réalisée à la demande 
                                         de <a href="https://red-samurai.re/" target="_blank" title="Ouvrir le site de Red Samurai dans une 
                                         nouvelle fenêtre">Red Samurai</a></span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée avec Laravel</span>
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée avec Laravel</span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="http://red-samourai.herokuapp.com/" target="_blank" alt="Ouvrir l'application web dans une nouvelle 
-                                fenêtre" title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <div class="card-footer-item">Code source <i class="fas fa-ban has-text-danger" alt=""></i></div>
+                                <a href="http://red-samourai.herokuapp.com/" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <div class="card-footer-item">Code source <i class="fas fa-ban has-text-danger" aria-hidden="true"></i></div>
                             </footer>
                         </div>
                         <!-- Chatbox -->
@@ -796,22 +778,22 @@
                                     </a>
                                 </figure>
                                 <p>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Application monopage de chat avec plusieurs
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Application monopage de chat avec plusieurs
                                             salons</span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Réalisée avec Vue.js
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Réalisée avec Vue.js
                                     </span><br/>
-                                    <span><i class="fas fa-angle-right has-text-grey-light" alt=""></i> Bot pas entièrement intégré <i 
-                                        class="fas fa-exclamation-circle" alt=""></i> 
+                                    <span><i class="fas fa-angle-right has-text-grey-light" aria-hidden="true"></i> Bot pas entièrement intégré <i 
+                                        class="fas fa-exclamation-circle" aria-hidden="true"></i> 
                                     </span>
                                 </p>
                             </div>
                             <footer class="card-footer">
-                                <a href="Chatbox/index.html" target="_blank" alt="Ouvrir l'application web dans une nouvelle 
-                                fenêtre" title="Ouvrir l'application web dans une nouvelle fenêtre"class="card-footer-item">Voir le site <i 
-                                class="fas fa-external-link-alt has-text-link" alt=""></i></a>
-                                <a href="https://github.com/Shi974/chatbox" target="_blank" alt="Ouvrir le code source de l'application dans une 
-                                nouvelle fenêtre" title="Ouvrir le code source de l'application dans une nouvelle fenêtre" 
-                                class="card-footer-item">Code source <i class="fas fa-external-link-alt has-text-link" alt=""></i></a>
+                                <a href="Chatbox/index.html" target="_blank" class="card-footer-item" 
+                                title="Ouvrir l'application web dans une nouvelle fenêtre">Voir le site <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Shi974/chatbox" target="_blank" class="card-footer-item" 
+                                title="Ouvrir le code source de l'application dans une nouvelle fenêtre">Code source <i 
+                                class="fas fa-external-link-alt has-text-link" aria-hidden="true"></i></a>
                             </footer>
                         </div>
                     </div>
@@ -819,20 +801,20 @@
                 <div class="columns">
                     <p class="column has-text-centered" id="more">
                         <a class="button is-link iconesociale" href="https://github.com/Shi974/effective-invention" 
-                        alt="Découvrir plus de projets" title="Découvrir plus de projets" target="_blank">
+                        title="Découvrir plus de projets" target="_blank">
                         Découvrir d'autres projets
                         </a>
                     </p>
                 </div>
                 <!-- PORTFOLIO DIVERS -->
                 <div class="is-hidden">
-                    <img class="is-hidden" src="resources/pf2.PNG">
-                    <img class="is-hidden" src="resources/pf3.PNG">
-                    <img class="is-hidden" src="resources/pf4.PNG">
-                    <img class="is-hidden" src="resources/pf6.PNG">
-                    <img class="is-hidden" src="resources/pf10.PNG">
-                    <img class="is-hidden" src="resources/pf16.PNG">
-                    <img class="is-hidden" src="resources/pf17.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf2.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf3.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf4.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf6.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf10.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf16.PNG">
+                    <img class="is-hidden" alt="" src="resources/pf17.PNG">
                 </div>
                 <!-- PORTFOLIO DIVERS FIN -->
             </div>
@@ -843,7 +825,7 @@
     <section class="section" id="contact">
         <div class="container">
             <div class="section-heading">
-                <h3 class="title is-2"><i class="fas fa-envelope has-text-primary" alt=""></i> Contact</h3>
+                <h3 class="title is-2"><i class="fas fa-envelope has-text-primary" aria-hidden="true"></i> Contact</h3>
                 <h4 class="subtitle is-5">Restons en contact</h4>
             </div>
             
@@ -856,7 +838,7 @@
                         <div class="control has-icons-left">
                         <input name="nom" class="input" type="text" placeholder="Ex : Marie Payet" value="">
                         <span class="icon is-small is-left">
-                                <i class="fas fa-user" alt=""></i>
+                                <i class="fas fa-user" aria-hidden="true"></i>
                         </span>
                         </div>
                     </div>
@@ -866,7 +848,7 @@
                         <div class="control has-icons-left">
                         <input name="_replyto" class="input" type="email" placeholder="Ex : nom@mail.com" value="">
                         <span class="icon is-small is-left">
-                            <i class="fas fa-envelope" alt=""></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </span>
                         </div>
                     </div>
@@ -884,7 +866,7 @@
                     <div class="field is-grouped has-text-centered">
                         <div class="control" id="button">
                             <button class="button is-primary is-medium" type="submit">
-                                <span class="icon"><i class="fas fa-paper-plane" alt=""></i></span>
+                                <span class="icon"><i class="fas fa-paper-plane" aria-hidden="true"></i></span>
                                 <span>Envoyer</span>
                             </button>
                         </div>
@@ -892,36 +874,27 @@
                 </form>
 
                 <div class="is-flex column">
-                    <!-- <div>
-                        <p>Téléphone</p>
-                        <p>0692 29 79 83</p>
-                        <p>
-                            <a href="tel:+262692297983" class="button is-link is-rounded"><i class="fas fa-phone" alt="Appelez-moi !" 
-                            title="Appelez-moi !"></i></a>
-                        </p>
-                    </div> -->
                     <div>
                         <p>Email</p>
                         <p>at.dev@gmx.fr</p>
                         <p>
-                            <a href="mailto:at.dev@gmx.fr" class="button is-link is-rounded"><i class="fas fa-at" alt="Ecrivez-moi !" 
+                            <a href="mailto:at.dev@gmx.fr" class="button is-link is-rounded"><i class="fas fa-at" aria-hidden="true"
                             title="Ecrivez-moi !"></i></a>
                         </p>
                     </div>
                     <div>
                         <p>Réseaux Sociaux</p>
-                        <a class="button is-link iconesociale" href="https://github.com/Shi974/" alt="GitHub" 
+                        <a class="button is-link iconesociale" href="https://github.com/Shi974/" 
                         title="Ouvrir la page GitHub dans une nouvelle fenêtre" target="_blank">
-                            <i class="fab fa-github-alt" alt=""></i>
+                            <i class="fab fa-github-alt" aria-hidden="true"></i>
                         </a>
-                        <a class="button is-link iconesociale" href="https://www.linkedin.com/in/annegaellet/" alt="LinkedIn" 
+                        <a class="button is-link iconesociale" href="https://www.linkedin.com/in/annegaellet/" 
                         title="Ouvrir le profil LinkedIn dans une nouvelle fenêtre" target="_blank">
-                            <i class="fab fa-linkedin-in" alt=""></i>
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                         </a>
-                        <!-- <a href="#" class="button is-link">Facebook</a> -->
-                        <a class="button is-link iconesociale" href="https://codepen.io/shi974/" alt="CodePen" 
+                        <a class="button is-link iconesociale" href="https://codepen.io/shi974/" 
                         title="Ouvrir la page CodePen dans une nouvelle fenêtre" target="_blank">
-                            <i class="fab fa-codepen" alt=""></i>
+                            <i class="fab fa-codepen" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -934,12 +907,12 @@
     <footer class="footer">
         <div class="section-heading">
             <p>
-                Made with <strong><i class="fas fa-heart has-text-danger" alt="love" title="love"></i></strong> by <a 
+                Made with <strong><i class="fas fa-heart has-text-danger" aria-hidden="true" title="love"></i></strong> by <a 
                 href="http://shi974.github.io">Anne-Gaëlle T</a>.<br>
                 Code source sous licence <a href="http://opensource.org/licenses/mit-license.php" target="_blank" 
                 title="Ouvrir la documentation sur la licence MIT dans une nouvelle fenêtre">MIT</a>.<br>
-                Copyright <i class="far fa-copyright" alt=""></i> 2019 - Tous droits réservés.<br>
-                <a class="button is-link" href="#home" alt="Retour accueil">Retour à l'accueil <i class="fas fa-home" id="up" alt=""></i></a>
+                Copyright <i class="far fa-copyright" aria-hidden="true"></i> 2019 - Tous droits réservés.<br>
+                <a class="button is-link" href="#home" title="Retour accueil">Retour à l'accueil <i class="fas fa-home" id="up" aria-hidden="true"></i></a>
             </p>
         </div>
     </footer>
