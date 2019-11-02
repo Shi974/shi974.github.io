@@ -558,16 +558,26 @@ footer .button {
     }
 }
 
-/* RESPONSIVENESS SERVICES COLONNES */
+/* RESPONSIVENESS SERVICES COLONNES + PORTFOLIO COLONNES */
 @media all and (max-width:1216px) and (min-width:770px) {
     #services .box {
         height: auto;
         box-shadow: none;
+    }
+
+    #portfolio .column {
+        width: 50% !important;
     }
 }
 
 @media all and (max-width:769px) and (min-width:600px) {
     #services .box {
         height: auto;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1216px) {
+    #portfolio .is-hidden-touch {
+        visibility: hidden;
     }
 }
