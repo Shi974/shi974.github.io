@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+}
+* i {
+  padding: 5px;
+  color: #de5a4c;
+}
+* button {
+  border: none;
+  background-color: transparent;
+}
+* button:hover {
+  color: #de5a4c;
+  text-shadow: 2px 2px 2px gray;
+  font-weight: bold;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 100vh;
+}
+
+.header,
+.footer {
+  position: absolute;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  bottom: 10vh;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+.row .column {
+  flex-direction: column;
+}
+.row .current {
+  width: 300px;
+  height: 130px;
+  background-color: #de5a4c;
+  font-size: 0.7em;
+}
+.row #round1,
+.row #round2 {
+  width: 50px;
+  height: 50px;
+  margin-top: 4%;
+}
+.row #p1,
+.row #p2 {
+  width: 50%;
+  height: 100%;
+  font-size: 1.5em !important;
+}
+.row span {
+  position: relative;
+  top: -18%;
+}
+.row #scoreP1,
+.row #scoreP2 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -10%;
+}
+.row .imgDice {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 28vh;
+}
+.row .imgDice img {
+  width: 150px;
+  height: 150px;
+  box-shadow: 3px 3px 3px gray;
+  box-shadow: -3px -3px 3px gray;
+}
+
+/*# sourceMappingURL=main.css.map */

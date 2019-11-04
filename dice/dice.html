@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice On!</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div id="main flex">
+        <div class="flex header"><button onclick="newGame()"><i class="icon ion-ios-plus-outline"></i> NEW GAME</button></div>
+        <main class="row flex">
+            <section id="p1" class="flex column">
+                <span id="p1Span">PLAYER 1</span>
+                <div id="scoreP1"></div>
+                <div class="current flex column">CURRENT
+                    <div id="round1"></div>
+                </div>
+            </section>
+            <div class="imgDice">
+                <img id="imgDice">
+            </div>
+            <section id="p2" class="flex column">
+                <span id="p2Span">PLAYER 2</span>
+                <div id="scoreP2"></div>
+                <div class="current flex column">CURRENT
+                    <div id="round2"></div>
+                </div>
+            </section>
+            <div class="flex footer">
+                <div><button onclick="rollDice()"><i class="icon ion-ios-loop"></i> ROLL DICE</button></div>
+
+                <div><button onclick="hold()"><i class="icon ion-ios-download-outline"></i> HOLD</button></div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
