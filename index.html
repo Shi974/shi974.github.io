@@ -57,7 +57,7 @@
                 </a>
                 <a class="navbar-item" href="#about">
                     <span class="icon">
-                        <i class="fas fa-address-card has-text-link" aria-hidden="true"></i>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
                     </span>
                     <span>A propos de moi</span>
                 </a>
@@ -250,7 +250,7 @@
     <!-- About -->
     <section class="section" id="about">
         <div class="section-heading">
-            <h3 class="title is-2"><i class="fas fa-address-card has-text-link" aria-hidden="true"></i> A propos de moi</h3>
+            <h3 class="title is-2"><i class="fas fa-address-card" aria-hidden="true"></i> A propos de moi</h3>
             <h4 class="subtitle is-5">👩‍💻 Geekette autodidacte passionnée de pop culture ✌️</h4>
             <div class="container">
                 <p>Développeuse Web originaire de l'<strong>Île de la Réunion</strong> 🌴, j'aime avant tout les <strong>nouvelles 
@@ -874,7 +874,7 @@
             <div class="columns">
                 <form class="column is-8 is-offset-1" action="https://formspree.io/at.dev@gmx.fr" method="POST">
                     <div class="field">
-                        <label class="label">Nom</label>
+                        <label for="nom" class="label">Nom</label>
                         <div class="control has-icons-left">
                         <input name="nom" class="input" type="text" placeholder="Ex : Marie Payet" value="">
                         <span class="icon is-small is-left">
@@ -884,7 +884,7 @@
                     </div>
         
                     <div class="field">
-                        <label class="label">Email</label>
+                        <label for="_replyto" class="label">Email</label>
                         <div class="control has-icons-left">
                         <input name="_replyto" class="input" type="email" placeholder="Ex : nom@mail.com" value="">
                         <span class="icon is-small is-left">
@@ -894,7 +894,7 @@
                     </div>
         
                     <div class="field">
-                        <label class="label">Message</label>
+                        <label for="message" class="label">Message</label>
                         <div class="control">
                         <textarea name="message" class="textarea" placeholder="Ecrire un message"></textarea>
                         </div>
@@ -927,14 +927,17 @@
                         <a class="button is-link iconesociale" href="https://github.com/Shi974/" 
                         title="Ouvrir la page GitHub dans une nouvelle fenêtre" target="_blank">
                             <i class="fab fa-github-alt" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
                         </a>
                         <a class="button is-link iconesociale" href="https://www.linkedin.com/in/annegaellet/" 
                         title="Ouvrir le profil LinkedIn dans une nouvelle fenêtre" target="_blank">
                             <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
                         </a>
                         <a class="button is-link iconesociale" href="https://codepen.io/shi974/" 
                         title="Ouvrir la page CodePen dans une nouvelle fenêtre" target="_blank">
                             <i class="fab fa-codepen" aria-hidden="true"></i>
+                            <span class="sr-only">CodePen</span>
                         </a>
                     </div>
                 </div>

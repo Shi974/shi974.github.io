@@ -1,5 +1,9 @@
 /* ------------------------- */
 /* GENERAL */
+.is-info {
+    background-color: #0F81CC !important;
+}
+
 .card-content h3 {
     text-align: center;
 }
@@ -343,6 +347,10 @@ th {
 
 #contact .section {
     margin-top: 5px !important;
+}
+
+.fa-address-card {
+    color: #570000;
 }
 
 #contact #button {
