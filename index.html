@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="referrer" content="origin">
     <meta name="author" content="Anne-Gaëlle Terrentroy">
-    <meta name="keywords" content="développeur,web,réunion,anne-gaelle,terrentroy,shi974,application,internet,site,création,digital,smartphone,responsive">
+    <meta name="keywords" content="développeur,codeur,développeuse,fullstack,web,réunion,ile de la réunion,reunion,anne-gaelle,terrentroy,shi974,application,internet,site,création,digital,smartphone,responsive,pourquoi">
     <meta name="description" content="Anne-Gaëlle Terrentroy, jeune Développeuse Web de l'Île de la Réunion et créatrice de solutions digitales. Sites vitrines, applications web, sites marchands, je vous accompagne dans la concrétisation de tous vos projets numériques dans le but de booster votre activité. N'hésitez plus !">
     <meta property="og:title" content="Anne-Gaëlle Terrentroy, Développeuse Web Fullstack" />
     <meta property="og:url" content="http://shi974.github.io" />
@@ -25,6 +25,8 @@
     <script src="https://kit.fontawesome.com/9a2a11b347.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
     <link rel="stylesheet" href="main.css" />
+    <!-- LET IT SNOW CSS -->
+    <link href="snow/let-it-snow.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <link rel="shortcut icon" href="resources/icon.png" type="image/x-icon">
 </head>
@@ -35,7 +37,6 @@
         <div class="navbar-brand">
                 <a class="navbar-item" href="#home">
                         <span class="icon">
-                            <!-- <i class="fas fa-robot has-text-dark" aria-hidden="true"></i> -->
                             <img src="resources/icon.png" alt="" id="icon" />
                         </span>
                         <span>Anne-Gaëlle, Dev Web</span>
@@ -72,6 +73,12 @@
                         <i class="fas fa-th-list has-text-warning" aria-hidden="true"></i>
                     </span>
                     <span>Portfolio</span>
+                </a>
+                <a class="navbar-item" href="site_internet.html">
+                    <span class="icon">
+                        <i class="far fa-question-circle has-text-white" aria-hidden="true"></i>
+                    </span>
+                    <span>Pourquoi un site web ?</span>
                 </a>
                 <a class="navbar-item" href="#contact">
                     <span class="icon">
@@ -999,6 +1006,17 @@
 
         });
     </script>
+
+    <!-- LET IT SNOW ! -->
+    <script src="snow/let-it-snow.js"></script>
+    <script>
+        $.letItSnow('.hero', {
+            stickyFlakes: 'lis-flake--js',
+            makeFlakes: true,
+            sticky: true
+            });
+    </script>
+
 </body>
 
 </html>

@@ -398,6 +398,20 @@ footer .button {
     }
 
 /* ------------------------- */
+/* WEBSITE */
+    #website {
+        border-radius: 10px;
+    }
+
+    #ws_page h3 i {
+        color: #209cee;
+    }
+
+    #ws_page .button {
+        font-weight: bold;
+    }
+
+/* ------------------------- */
 /* RESPONSIVE => PHONES MAX 600PX WIDTH*/
 @media all and (max-width:600px) {
 
@@ -560,6 +574,27 @@ footer .button {
         flex-direction: column;
         justify-content: center;
     }
+
+    /* ---------------- */
+    /* WEBSITE */
+    #ws_page .hero-body {
+        padding-right: 12px !important;
+    }
+
+    #ws_page .section {
+        padding: 0.5rem 1.5rem;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #ws_page h3 {
+        font-size: 2.3rem;
+    }
+
+    #ws_page .button {
+        height: auto;
+        white-space: normal;
+    }
 }
 
 /* RESPONSIVENESS SERVICES COLONNES + PORTFOLIO COLONNES */
@@ -583,5 +618,12 @@ footer .button {
 @media all and (min-width: 1024px) and (max-width: 1216px) {
     #portfolio .is-hidden-touch {
         visibility: hidden;
+    }
+}
+
+/* RESPONSIVENESS NAVBAR < 1022px */
+@media all and (max-width: 1023px) {
+    .fa-question-circle  {
+        color: #209cee !important;
     }
 }
