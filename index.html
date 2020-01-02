@@ -99,7 +99,10 @@
                     Anne-Gaëlle Terrentroy
                 </h1>
                 <h2 class="subtitle is-3">
-                    <i class="fas fa-terminal has-text-grey-light is-hidden" aria-hidden="true"></i> Développeur Web Full Stack
+                    <i class="fas fa-terminal has-text-grey-light is-hidden" aria-hidden="true"></i> Créatrice de Solutions Digitales
+                </h2>
+                <h2 class="subtitle is-3">
+                    <i class="fas fa-code has-text-grey-light is-hidden" aria-hidden="true"></i> Développeuse Web Fullstack
                 </h2>
             </div>
             <div class="column">
@@ -994,6 +997,7 @@
                 $('#home').addClass("has-text-primary");
                 $('.is-3').addClass("has-text-primary has-text-weight-bold");
                 $('.fa-terminal').removeClass('is-hidden');
+                $('.fa-code').removeClass('is-hidden');
             });
 
             $('#pix, .is-3').click(function () {
@@ -1002,19 +1006,10 @@
                 $('#home').removeClass("has-text-primary");
                 $('.is-3').removeClass("has-text-primary");
                 $('.fa-terminal').removeClass("has-text-grey-light").addClass("has-text-danger");
+                $('.fa-code').removeClass("has-text-grey-light").addClass("has-text-danger");
             });
 
         });
-    </script>
-
-    <!-- LET IT SNOW ! -->
-    <script src="snow/let-it-snow.js"></script>
-    <script>
-        $.letItSnow('.hero', {
-            stickyFlakes: 'lis-flake--js',
-            makeFlakes: true,
-            sticky: true
-            });
     </script>
 
 </body>

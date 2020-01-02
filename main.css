@@ -429,7 +429,7 @@ footer .button {
     }
 
     h1 {
-        font-size: 2.8rem !important;
+        font-size: 2.3rem !important;
     }
 
     #home .column:last-child {
@@ -441,6 +441,10 @@ footer .button {
     #pix {
         max-width: 90%;
         height: auto;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
     }
 
     /* ---------------- */
