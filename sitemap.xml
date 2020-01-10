@@ -9,49 +9,53 @@
 
 <url>
   <loc>https://shi974.github.io/</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://shi974.github.io/resources/html.pdf</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
-  <priority>0.30</priority>
+  <loc>https://shi974.github.io/site_internet.html</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shi974.github.io/resources/css.pdf</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
-  <priority>0.30</priority>
+  <loc>https://shi974.github.io/blog.html</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shi974.github.io/resources/js.pdf</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
-  <priority>0.30</priority>
+  <loc>https://shi974.github.io/resources/certificates/html-css-oc.pdf</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shi974.github.io/resources/responsive-web-design.pdf</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
-  <priority>0.30</priority>
+  <loc>https://shi974.github.io/resources/certificates/responsive-web-design.pdf</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://shi974.github.io/resources/AnneGaelle-CurriculumVitae.pdf</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
-  <priority>0.30</priority>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shi974.github.io/illdy/index.html</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
+  <loc>https://shi974.github.io/resources/certificates/certificates.pdf</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://shi974.github.io/Tri_selectif/index.html</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shi974.github.io/Chatbox/index.html</loc>
-  <lastmod>2019-10-02T14:30:19+00:00</lastmod>
+  <loc>https://shi974.github.io/illdy/index.html</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shi974.github.io/index.html</loc>
+  <lastmod>2020-01-10T11:21:18+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
