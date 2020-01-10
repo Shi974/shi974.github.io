@@ -23,9 +23,17 @@ hr {
 
 /* ------------------------- */
 /* NAVBAR */
-#icon {
+.icon {
     margin-right: 5px;
     width: 17px;
+}
+
+.fa-address-card {
+    color: #570000;
+}
+
+.fa-newspaper {
+    color: #800080;
 }
 
 /* ------------------------- */
@@ -345,10 +353,6 @@ th {
     margin-top: 5px !important;
 }
 
-.fa-address-card {
-    color: #570000;
-}
-
 #contact #button {
     margin: auto;
 }
@@ -410,6 +414,12 @@ footer .button {
     #ws_page .button {
         font-weight: bold;
     }
+
+/* ------------------------- */
+/* BLOG */
+#blog {
+    border-radius: 10px;
+}
 
 /* ------------------------- */
 /* RESPONSIVE => PHONES MAX 600PX WIDTH*/
