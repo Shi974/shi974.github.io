@@ -38,8 +38,8 @@ hr {
 
 /* ------------------------- */
 /* HERO */
-h1:hover,
-h2:hover {
+#pf01 h1:hover,
+#pf01 h2:hover {
     transform: scale(1.1);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
 }
