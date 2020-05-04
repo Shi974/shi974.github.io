@@ -63,11 +63,12 @@ hr {
     border-radius: 50%;
     width: 100%;
     height: auto;
-    transform: rotate(80deg);
+    /* transform: rotate(80deg); */
 }
 
 #pix:hover {
-    transform: scale(1.1) rotate(80deg);
+    transform: scale(1.1);
+    /* transform: scale(1.1) rotate(80deg); */
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.411);
     /* #2478af */
 }
