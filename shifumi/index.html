@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShiFuMi!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        button {
+            padding: 15px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="title is-1">Let's play a game...</span>
+    <div id="game">
+        <button id="pierre" onclick="myFunction(this.id)">Pierre</button>
+        <button id="feuille" onclick="myFunction(this.id)">Feuille</button>
+        <button id="ciseaux" onclick="myFunction(this.id)">Ciseaux</button>
+    </div>
+    <div id="essai"></div>
+    <div id="resultat"></div>
+
+
+    <script>
+        // Déclaration des choix possibles
+        var choix = ["pierre", "feuille", "ciseaux"];
+        //var choixUser = "pierre";
+        var ordi;
+
+        // Affichage résultat
+        var result = document.getElementById("resultat");
+        result.innerHTML = "";
+        var count = document.getElementById("essai"); // affichage nombre essais
+        count.innerHTML = "";
+
+        // Déclaration scores & essais
+        scoreUser = 0;
+        scoreOrdi = 0;
+        let essai = 0;
+
+        function myFunction(e) {
+            ordi = choix[Math.floor(Math.random() * 3)]; // aléatoire parmi l'ARRAY
+
+            choixUser = e;
+            console.log(choixUser);
+            tentative();
+            match(choixUser, ordi);
+        }
+
+        function tentative() {
+            console.log(ordi);
+            if (essai >= 3) {
+                count.innerHTML = "La partie est finie. <br>";
+                result.innerHTML = "Fin de la partie! Scores = vous : " + scoreUser + " / ordinateur : " +
+                    scoreOrdi +
+                    ". <br>";
+                if (scoreUser > scoreOrdi) {
+                    result.innerHTML += "GG ! Vous avez gagné!<br>";
+                } else if (scoreOrdi > scoreUser) {
+                    result.innerHTML += "Bip boup bip Boup! Vous avez perdu!<br>";
+                } else {
+                    result.innerHTML += "Egalité ... ou alors vous avez cassé la machine, GG :D <br>";
+                }
+            } else {
+                essai++;
+                console.log("essai = " + essai);
+                return count.innerHTML = "Ceci est votre essai n° " + essai + ". <br>";
+            }
+        }
+
+        // Fonction JEU
+        function match(choix1, choix2) {
+            if (choix1 === choix2) {
+                return result.innerHTML += "Vous avez choisi " + choix1 +
+                    " et l'ordinateur a choisi " + choix2 + ". Egalité! <br>";
+            } else {
+                if (choix1 === "pierre") {
+                    if (choix2 === "feuille") {
+                        scoreOrdi++;
+                        return result.innerHTML += "Vous avez choisi " + choix1 + " et l'ordinateur a choisi " +
+                            choix2 +
+                            ". La feuille gagne! <br>";
+                    } else {
+                        scoreUser++;
+                        return result.innerHTML += "Vous avez choisi " + choix1 + " et l'ordinateur a choisi " +
+                            choix2 +
+                            ". La pierre gagne! <br>";
+                    }
+                } else {
+                    if (choix1 === "ciseaux") {
+                        if (choix2 === "feuille") {
+                            scoreUser++;
+                            return result.innerHTML += "Vous avez choisi " + choix1 + " et l'ordinateur a choisi " +
+                                choix2 + ". Les ciseaux gagnent!  <br>";
+                        } else {
+                            scoreOrdi++;
+                            return result.innerHTML += "Vous avez choisi " + choix1 + " et l'ordinateur a choisi " +
+                                choix2 + ". La pierre gagne!  <br>";
+                        }
+                    } else {
+                        if (choix1 === "feuille") {
+                            if (choix2 === "pierre") {
+                                scoreUser++;
+                                return result.innerHTML += "Vous avez choisi " + choix1 + " et l'ordinateur a choisi " +
+                                    choix2 + ". La feuille gagne!  <br>";
+
+                            } else {
+                                scoreOrdi++;
+                                return result.innerHTML += "Vous avez choisi " + choix1 + " et l'ordinateur a choisi " +
+                                    choix2 + ". Les ciseaux gagnent!  <br>";
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            tentative();
+
+        }
+    </script>
+</body>
+
+</html>
