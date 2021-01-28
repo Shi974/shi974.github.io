@@ -417,47 +417,47 @@ function contactFormSetup() {
     });
 
 
-    $('#contact-form').on('submit', function(e) {
-        e.preventDefault();
-        var name = $('#cf-name').val(),
-            email = $('#cf-email').val(),
-            message = $('#cf-message').val(),
-            $messageBox = $('#contact-form .message'),
-            required = 0;
+    // $('#contact-form').on('submit', function(e) {
+    //     e.preventDefault();
+    //     var name = $('#cf-name').val(),
+    //         email = $('#cf-email').val(),
+    //         message = $('#cf-message').val(),
+    //         $messageBox = $('#contact-form .message'),
+    //         required = 0;
 
 
-        $('.cf-validate', this).each(function() {
-            if($(this).val() == '') {
-                $(this).addClass('cf-error');
-                required += 1;
-            } else {
-                if($(this).hasClass('cf-error')) {
-                    $(this).removeClass('cf-error');
-                    if(required > 0) {
-                        required -= 1;
-                    }
-                }
-            }
-        });
-        if( required === 0 ) {
-            $.ajax({
-                type: 'POST',
-                url: 'mail.php',
-                data: {
-                    cf_name: name,
-                    cf_email: email,
-                    cf_message: message
-                },
-                success: function(data) {
-                    $("#contact-form .input__field").val("");
-                    showAlertBox(data.status, data.responseText);
-                },
-                error: function(data) {
-                    showAlertBox(data.status, data.responseText);
-                }
-            });
-        }
-    });
+    //     $('.cf-validate', this).each(function() {
+    //         if($(this).val() == '') {
+    //             $(this).addClass('cf-error');
+    //             required += 1;
+    //         } else {
+    //             if($(this).hasClass('cf-error')) {
+    //                 $(this).removeClass('cf-error');
+    //                 if(required > 0) {
+    //                     required -= 1;
+    //                 }
+    //             }
+    //         }
+    //     });
+    //     if( required === 0 ) {
+    //         // $.ajax({
+    //         //     type: 'POST',
+    //         //     url: 'mail.php',
+    //         //     data: {
+    //         //         cf_name: name,
+    //         //         cf_email: email,
+    //         //         cf_message: message
+    //         //     },
+    //         //     success: function(data) {
+    //         //         $("#contact-form .input__field").val("");
+    //         //         showAlertBox(data.status, data.responseText);
+    //         //     },
+    //         //     error: function(data) {
+    //         //         showAlertBox(data.status, data.responseText);
+    //         //     }
+    //         // });
+    //     }
+    // });
 }
 
 
