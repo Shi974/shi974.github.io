@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Game</title>
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="top" class="row site">
+        <div class="sm-12 md-12 col">
+            <div class="paper">
+                <div class="demo-title">
+                    <div class="row flex-center">
+                        <div class="text-center">
+                            <h1>Party Game</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section">
+                    <div class="container">
+                        <div id="app">
+                            <div class="row flex-center child-borders">
+                                <button @click="resetPoints" class="paper-btn margin">Reset les scores</button>
+                                <a @click="resetJoueurs" class="paper-btn margin">Reset les joueurs</a>
+                            </div>
+
+                            <div>
+                                <input v-model="element" placeholder="Nom nouveau joueur"
+                                    @keyup.enter="addJoueur(element)" id="input1">
+                                <button @click="addJoueur(element)" class="btn-success-outline">
+                                    <img src="assets/plus.png" width="20" style="border:none;"> Ajouter
+                                </button>
+                            </div>
+                            <hr>
+                            <ul>
+                                <li v-for="joueur in joueurs">
+                                    <span>{{ joueur.nom }}</span>
+                                    <button @click="joueur.edit = true"><img src="assets/pen.png" width="20" style="border:none;"></button>
+                                    <input v-show="joueur.edit == true" v-model="joueur.nom" @keyup.enter="joueur.edit=false; $emit('update')">
+                                    <button @click="removeJoueur(joueur)">
+                                        <img src="assets/croix.png" width="20" style="border:none;">
+                                    </button>
+                                    <button @click="joueur.points++">+1 point</button><button @click="joueur.points--">-1 point</button><br>
+                                    <span style="color: green;">{{ joueur.points }} points</span>
+                                </li>
+                            </ul>
+                            <!-- <hr>
+                            <div id="rank">
+                                //TODO classement
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="main.js"></script>
+</body>
+
+</html>
