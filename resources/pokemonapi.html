@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const total_pokemons = 898;
+        // const total_pokemons = 500;
+
+        function aleatoire(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        urlFetch(aleatoire(1, total_pokemons));
+
+        function urlFetch(id) {
+            fetch(`https://pokebuildapi.fr/api/v1/pokemon/${id}`)
+            // fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+            .then(response => response.json())
+            .then(function(data){
+                let nom = data.name;
+                let img = data.sprite;
+                console.log(nom, img);
+                document.write(' ' + nom);
+                document.write('<img src="' + img + '">');
+            });
+        }
+    </script>
+</head>
+<body>
+    <section id="pokemon">
+    </section>
+</body>
+</html>
